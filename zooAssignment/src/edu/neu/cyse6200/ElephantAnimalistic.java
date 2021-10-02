@@ -11,8 +11,7 @@ public class ElephantAnimalistic implements AnimalisticAPI{
 	@Override
 	public String toString() {
 		
-		System.out.println("To String method from ElephantAnimalistic class");
-		return "";
+		return "To String method from ElephantAnimalistic class";
 	}
 
 }

@@ -11,8 +11,7 @@ public class Elephent extends AnimalAPI{
 	@Override
 	public String toString() {
 		
-		System.out.println("To String method from Elephent class");
-		return "";
+		return "To String method from Elephent class";
 	}
 	
 }

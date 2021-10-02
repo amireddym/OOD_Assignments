@@ -11,8 +11,7 @@ public class LionAbstract extends AbstractAnimalAPI{
 	@Override
 	public String toString() {
 		
-		System.out.println("To String method from LionAbstract class");
-		return "";
+		return "To String method from LionAbstract class";
 	}
 
 }

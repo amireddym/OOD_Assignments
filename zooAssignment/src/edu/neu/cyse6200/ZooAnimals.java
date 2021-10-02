@@ -21,7 +21,7 @@ public class ZooAnimals {
 		for(AnimalAPI animalAPI:animalApis) {
 			
 			animalAPI.makeSound();
-			animalAPI.toString();
+			System.out.println(animalAPI.toString());
 		}
 	}
 

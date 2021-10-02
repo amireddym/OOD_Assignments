@@ -8,7 +8,7 @@ public abstract class AbstractAnimalAPI {
 	public String toString() {
 		
 		System.out.println("To String method from Abstarct AbstractAnimalAPI class");
-		return super.toString();
+		return "";
 	}
 
 }

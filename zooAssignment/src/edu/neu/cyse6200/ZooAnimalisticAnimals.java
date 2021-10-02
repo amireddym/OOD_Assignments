@@ -22,7 +22,7 @@ public class ZooAnimalisticAnimals {
 		for(AnimalisticAPI animalisticAPI:animalisticApis) {
 			
 			animalisticAPI.makeSound();
-			animalisticAPI.toString();
+			System.out.println(animalisticAPI.toString());
 		}
 	}
 

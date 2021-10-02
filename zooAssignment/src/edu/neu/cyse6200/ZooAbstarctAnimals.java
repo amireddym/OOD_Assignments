@@ -20,7 +20,7 @@ public class ZooAbstarctAnimals {
 		for(AbstractAnimalAPI abstractAnimalAPI:abstractAnimalApis) {
 			
 			abstractAnimalAPI.makeSound();
-			abstractAnimalAPI.toString();
+			System.out.println(abstractAnimalAPI.toString());
 		}
 	}
 

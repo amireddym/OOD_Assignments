@@ -11,8 +11,7 @@ public class TigerAnimalistic implements AnimalisticAPI{
 	@Override
 	public String toString() {
 		
-		System.out.println("To String method from TigerAnimalistic class");
-		return "";
+		return "To String method from TigerAnimalistic class";
 	}
 
 }

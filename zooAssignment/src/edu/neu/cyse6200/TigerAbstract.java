@@ -11,8 +11,7 @@ public class TigerAbstract extends AbstractAnimalAPI{
 	@Override
 	public String toString() {
 		
-		System.out.println("To String method from TigerAbstract class");
-		return "";
+		return "To String method from TigerAbstract class";
 	}
 
 }

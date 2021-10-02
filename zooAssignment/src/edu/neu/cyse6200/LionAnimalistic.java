@@ -11,8 +11,7 @@ public class LionAnimalistic implements AnimalisticAPI{
 	@Override
 	public String toString() {
 		
-		System.out.println("To String method from LionAnimalistic class");
-		return "";
+		return "To String method from LionAnimalistic class";
 	}
 
 }

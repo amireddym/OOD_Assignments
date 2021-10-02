@@ -11,7 +11,6 @@ public class Lion  extends AnimalAPI{
 	@Override
 	public String toString() {
 		
-		System.out.println("To String method from Lion class");
-		return "";
+		return "To String method from Lion class";
 	}
 }
