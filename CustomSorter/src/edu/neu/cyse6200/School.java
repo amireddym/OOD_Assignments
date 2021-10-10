@@ -2,6 +2,7 @@ package edu.neu.cyse6200;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class School {
@@ -63,22 +64,25 @@ public class School {
 		System.out.println();
 		
 		System.out.println("StudentRoster list Sorted By ID");
-		school.getStudents().sort(Person::compareId);              // default sort by id for studentRoster List
+		school.getStudents().sort(Person::compareId);                      // default sort by id for studentRoster List
+//		Collections.sort(school.getStudents(), new ComparatorByID());      // Comparator way of Sorting by ID
 		school.getStudents().forEach(System.out::println);
 		System.out.println();
 
 		System.out.println("StudentRoster list Sorted By Age");
-		school.getStudents().sort(Student::compareAge);            // sort by Age for studentRoster List
+		school.getStudents().sort(Student::compareAge);                    // sort by Age for studentRoster List
+//		Collections.sort(school.getStudents(), new ComparatorByAge());     // Comparator way of Sorting by Age
 		school.getStudents().forEach(System.out::println);
 		System.out.println();
 		
 		System.out.println("StudentRoster list Sorted By Gpa");
-		Collections.sort(school.getStudents());                    // sort by Gpa for studentRoster List 
+		Collections.sort(school.getStudents());                            // sort by Gpa for studentRoster List
 		school.getStudents().forEach(System.out::println);
 		System.out.println();
 
 		System.out.println("StudentRoster list Sorted By Name");
-		school.getStudents().sort(Student::compareName);           // sort by name for studentRoster List
+		school.getStudents().sort(Student::compareName);                   // sort by name for studentRoster List
+//		Collections.sort(school.getStudents(), new ComparatorByName());    // Comparator way of Sorting by Name
 		school.getStudents().forEach(System.out::println);
 		System.out.println();
 	}
@@ -90,22 +94,25 @@ public class School {
 		System.out.println();
 		
 		System.out.println("PersonRoster list Sorted By ID");
-		school.getPersons().sort(Person::compareId);              // Sort by id for personRoster List
+		school.getPersons().sort(Person::compareId);                      // Sort by id for personRoster List
+//		Collections.sort(school.getPersons(), new ComparatorByID());      // Comparator way of Sorting by ID
 		school.getPersons().forEach(System.out::println);
 		System.out.println();
 				
 		System.out.println("PersonRoster list Sorted By Age");
-		school.getPersons().sort(Person::compareAge);             // Sort by age for person;
+		school.getPersons().sort(Person::compareAge);                     // Sort by age for person;
+//		Collections.sort(school.getPersons(), new ComparatorByAge());     // Comparator way of Sorting by Age
 		school.getPersons().forEach(System.out::println);
 		System.out.println();
 		
 		System.out.println("PersonRoster list Sorted By Name");
-		school.getPersons().sort(Person::compareName);            // name for person
+		school.getPersons().sort(Person::compareName);                    // name for person
+//		Collections.sort(school.getPersons(), new ComparatorByName());    // Comparator way of Sorting by Name
 		school.getPersons().forEach(System.out::println);
 		System.out.println();
 		
 		System.out.println("PersonRoster list Sorted By Gpa");
-		Collections.sort(school.getPersons());                    // sort by Gpa for studentRoster List 
+		Collections.sort(school.getPersons());                            // sort by Gpa for studentRoster List 
 		school.getPersons().forEach(System.out::println);
 		System.out.println();
 	}

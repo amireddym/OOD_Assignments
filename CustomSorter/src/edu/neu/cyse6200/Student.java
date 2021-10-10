@@ -17,16 +17,15 @@ public class Student extends Person {
 		this.gpa = gpa;
 	}
 	
-	
 	// Does runtime polymorphism
 	@Override
 	public int compareTo(Person o) {
 		
-		Student s = (Student) o;
+		Student s = (Student) o;      // Type casting
 		return Double.compare(getGpa(), s.getGpa());
 	}
-	
-	//Gpa comparator
+	 
+	//Gpa comparator with Comparator methods 
 	public static int compareGpa(Student a, Student b) {
 		
 		return Double.compare(a.getGpa(), a.getGpa());

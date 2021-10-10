@@ -38,19 +38,19 @@ public class Person implements Comparable<Person>{
 		return Integer.compare(getId(), o.getId());
 	}
 	
-	//Age comparator
+	//Age comparator method
 	public static int compareAge(Person a , Person b) {
 		
 		return Integer.compare(a.getAge(), b.getAge());
 	}
 	
-	//Name comparator
+	//Name comparator method
 	public static int compareName(Person a , Person b) {
 	
 		return a.getName().compareToIgnoreCase(b.getName());
 	}
 	
-	//Id comparator
+	//Id comparator method
 	public static int compareId(Person a, Person b) {
 		return Integer.compare(a.getId(), b.getId());
 	}
