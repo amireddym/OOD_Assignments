@@ -52,8 +52,6 @@ public class School {
 		System.out.println("------------------------------------");
 		
 		school.sortPersonRoasterList(school);
-
-//		school.getStudents().sort(new ComparatorByName());
 		
 	}
 	
