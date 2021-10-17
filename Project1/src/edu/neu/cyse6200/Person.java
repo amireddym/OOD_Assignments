@@ -1,5 +1,6 @@
 package edu.neu.cyse6200;
 
+
 public class Person {
 	
 	private int id;
@@ -24,6 +25,10 @@ public class Person {
 		this.lastName = lastName;
 		this.parentFirstName = parentFirstName;
 		this.parentLastName = parentLastName;
+	}
+	
+	public Person() {
+		
 	}
 
 	public int getId() {
@@ -72,6 +77,18 @@ public class Person {
 
 	public void setParentLastName(String parentLastName) {
 		this.parentLastName = parentLastName;
+	}
+
+	@Override
+	public String toString() {
+		return id +"," + age + "," + firstName + "," + lastName
+				+ "," + parentFirstName + "," + parentLastName;
+	}
+	
+	
+	public int sortById(Student o1) {
+		
+		return Integer.compare(getId(),o1.getStudentId());
 	}
 
 }

@@ -2,12 +2,15 @@ package edu.neu.cyse6200;
 
 import java.util.Comparator;
 
-public class StudentComparatorByGpa implements Comparator<Student>{
+public class StudentComparatorByGpa implements Comparator<Person>{
 
 	@Override
-	public int compare(Student o1, Student o2) {
+	public int compare(Person o1, Person o2) {
 		
-		return Double.compare(o1.getGpa(), o2.getGpa());
+		Student s1 = (Student) o1;
+		Student s2 = (Student) o2;
+		
+		return Double.compare(s1.getGpa(), s2.getGpa());
 	}
 
 }
