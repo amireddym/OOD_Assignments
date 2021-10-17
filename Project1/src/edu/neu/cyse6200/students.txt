@@ -1,4 +1,0 @@
-13,24,manoj,reddy,venkat,amireddy,123,3.39
-16,27,daniel,peters,rutherford,rick,132,3.13
-11,20,ruthivk,verma,karthik,reddy,111,3.5
-19,25,ramana,sastry,satish,acharya,199,3.97
