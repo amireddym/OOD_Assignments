@@ -2,7 +2,7 @@ package edu.neu.cyse6200;
 
 public class ElectronicItem extends Item{
 
-	ElectronicItem(String csv) {
+	private ElectronicItem(String csv) {
 		
 		String[] objectData = csv.split(",");
 		int id = 0;
@@ -27,6 +27,11 @@ public class ElectronicItem extends Item{
 		this.name=name;
 		this.price=price;
 		
+	}
+	
+	public static Item getElectronicItem(String csv) {
+		
+		return new ElectronicItem(csv);
 	}
 	
 	@Override

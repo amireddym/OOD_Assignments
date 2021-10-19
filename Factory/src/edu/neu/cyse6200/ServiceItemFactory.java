@@ -13,7 +13,7 @@ public class ServiceItemFactory extends BaseFactory{
 		List<String> csvStrings = FileUtil.readDataFromFile("src/edu/neu/cyse6200/serviceItemCSV.txt");
 		
 		for(String csv:csvStrings) {
-			Item item = new ServiceItem(csv);
+			Item item = ServiceItem.getServiceItem(csv);
 			serviceItemsMap.put(item.getName(), item);			
 		}
 	}

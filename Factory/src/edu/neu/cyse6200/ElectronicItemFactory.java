@@ -28,7 +28,7 @@ public class ElectronicItemFactory extends BaseFactory{
 			List<String> csvStrings = FileUtil.readDataFromFile("src/edu/neu/cyse6200/electronicItemCSV.txt");
 			
 			for(String csv:csvStrings) {
-				Item item = new ElectronicItem(csv);
+				Item item = ElectronicItem.getElectronicItem(csv);
 				electronicItemsMap.put(item.getName(), item);			
 			}
 		}
