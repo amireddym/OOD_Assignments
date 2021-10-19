@@ -2,12 +2,6 @@ package edu.neu.cyse6200;
 
 public class FoodItem extends Item{
 
-	public FoodItem(int id, String name, double price) {
-		this.id=id;
-		this.name=name;
-		this.price=price;
-	}
-
 	public FoodItem(String csv) {
 		
 		String[] objectData = csv.split(",");

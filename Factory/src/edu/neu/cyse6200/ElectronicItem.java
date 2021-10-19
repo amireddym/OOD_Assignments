@@ -2,12 +2,6 @@ package edu.neu.cyse6200;
 
 public class ElectronicItem extends Item{
 
-	public ElectronicItem(int id, String name, double price) {
-		this.id=id;
-		this.name=name;
-		this.price=price;
-	}
-
 	public ElectronicItem(String csv) {
 		
 		String[] objectData = csv.split(",");

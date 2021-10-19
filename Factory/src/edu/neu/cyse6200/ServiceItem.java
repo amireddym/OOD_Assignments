@@ -2,12 +2,6 @@ package edu.neu.cyse6200;
 
 public class ServiceItem extends Item{
 
-	public ServiceItem(int id, String name, double price) {
-		this.id=id;
-		this.name=name;
-		this.price=price;
-	}
-
 	public ServiceItem(String csv) {
 		
 		String[] objectData = csv.split(",");
