@@ -1,0 +1,2 @@
+1,xbox,12.5
+2,playstation,35.6
