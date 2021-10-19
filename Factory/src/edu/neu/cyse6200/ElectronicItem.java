@@ -2,7 +2,7 @@ package edu.neu.cyse6200;
 
 public class ElectronicItem extends Item{
 
-	public ElectronicItem(String csv) {
+	ElectronicItem(String csv) {
 		
 		String[] objectData = csv.split(",");
 		int id = 0;
