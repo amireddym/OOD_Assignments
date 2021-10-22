@@ -8,6 +8,8 @@ public class ElectronicItemFactory extends BaseFactory{
 
 	
 	private static Map<String,Item> electronicItemsMap = null;
+	
+	private static ElectronicItemFactory electronicItemFactory =null;
 		
 	@Override
 	public Item getItem(String name) {
@@ -24,6 +26,15 @@ public class ElectronicItemFactory extends BaseFactory{
 		}
 		
 		return electronicItemsMap.get(name);
+	}
+	
+	public static BaseFactory getElectronicItemFactory() {
+		
+		if(electronicItemFactory==null) {
+			electronicItemFactory = new ElectronicItemFactory();
+		}
+		
+		return electronicItemFactory;
 	}
 
 }

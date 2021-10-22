@@ -8,6 +8,8 @@ public class ServiceItemFactory extends BaseFactory{
 
 	private static Map<String,Item> serviceItemsMap = new HashMap<>();
 	
+	private static ServiceItemFactory serviceItemFactory = new ServiceItemFactory();
+	
 	static {
 		
 		List<String> csvStrings = FileUtil.readDataFromFile("src/edu/neu/cyse6200/serviceItemCSV.txt");
@@ -18,11 +20,15 @@ public class ServiceItemFactory extends BaseFactory{
 		}
 	}
 	
-	
 	@Override
 	public Item getItem(String name) {
 		
 		return serviceItemsMap.get(name);
+	}
+	
+	public static BaseFactory getServiceItemFactory() {
+		
+		return serviceItemFactory;
 	}
 
 }

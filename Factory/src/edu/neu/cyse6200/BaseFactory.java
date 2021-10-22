@@ -9,9 +9,9 @@ public class BaseFactory {
 			case("Food"):
 				return new FoodItemFactory();
 			case("Service"):
-				return new ServiceItemFactory();
+				return ServiceItemFactory.getServiceItemFactory();
 			case("Electronic"):
-				return new ElectronicItemFactory();
+				return ElectronicItemFactory.getElectronicItemFactory();
 		}
 		return null;
 		
