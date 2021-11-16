@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="CustomSorter/src"/>
+	<classpathentry kind="src" path="Factory/src"/>
+	<classpathentry kind="src" path="MidTermPartB/src"/>
+	<classpathentry kind="src" path="Project1/src"/>
+	<classpathentry kind="src" path="zooAssignment/src"/>
+	<classpathentry kind="output" path="CustomSorter/bin"/>
+</classpath>
