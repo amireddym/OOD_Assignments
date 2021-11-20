@@ -22,6 +22,7 @@ public class DataStructureSample {
 		stackInt.pop();
 		System.out.println(stackInt.size());
 		System.out.println("Stack is empty Now");
+		stackInt.pop();
 		System.out.println(stackInt.toString());
 		
 		System.out.println("----------------------------------------");
@@ -44,6 +45,7 @@ public class DataStructureSample {
 		stackGeneric.pop();
 		System.out.println(stackGeneric.size());
 		System.out.println("Stack is empty Now");
+		stackGeneric.pop();
 		System.out.println(stackGeneric.toString());
 		
 		System.out.println("----------------------------------------");
