@@ -32,6 +32,7 @@ public class StackGeneric<T> {
 			System.out.println("Stack is Full. Cannot be Inserted");
 			return;
 		}
+		System.out.println("Pushing item on to the stack");
 		counter++;
 		genericArray[counter] = a;
 
